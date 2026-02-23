@@ -8,20 +8,20 @@ import { Button } from "./ui/button";
 
 export default function Navbar() {
   return (
-    <nav className="border-b bg-background">
+    <nav className="bg-background">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <div className="flex items-center gap-6">
+        <div className="flex items-center w-full justify-between">
           <Link href="/">
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-lg bg-linear-to-r from-blue-500 to-purple-500 flex items-center justify-center">
                 <ChartCandlestick className="h-4 w-4 text-white" />
               </div>
-              <span>Mercatus</span>
+              <span className="font-bold">Mercatus</span>
             </div>
           </Link>
           {/* Center Links */}
-          <div className="flex  items-center justify-between">
-            <div className="flex flex-row gap-2">
+          <div className="flex items-center justify-between">
+            <div className="flex flex-row gap-8">
               <Link
                 href="/contact"
                 className="text-sm hover:text-primary flex items-center gap-1"
