@@ -8,9 +8,9 @@ import { Button } from "./ui/button";
 
 export default function Navbar() {
   return (
-    <nav className="bg-background">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <div className="flex items-center w-full justify-between">
+    <nav className="bg-transparent">
+      <div className="fixed container mx-auto flex h-24 max-w-full items-center justify-between px-4 bg-linear-to-b from-black via-80% to-transparent">
+        <div className="flex items-center w-full justify-between ">
           <Link href="/">
             <div className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-lg bg-linear-to-r from-blue-500 to-purple-500 flex items-center justify-center">
@@ -24,19 +24,19 @@ export default function Navbar() {
             <div className="flex flex-row gap-8">
               <Link
                 href="/contact"
-                className="text-sm hover:text-primary flex items-center gap-1"
+                className="text-base hover:text-primary flex items-center gap-1"
               >
                 Contact
               </Link>
               <Link
                 href="/about"
-                className="text-sm hover:text-primary flex items-center gap-1"
+                className="text-base hover:text-primary flex items-center gap-1"
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-sm hover:text-primary flex items-center gap-1"
+                className="text-base hover:text-primary flex items-center gap-1"
               >
                 Contact
               </Link>

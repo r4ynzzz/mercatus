@@ -37,7 +37,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <main className="flex-1 container mx-auto px-2 py-4">
+            <main className="flex-1 mx-auto  ">
               <Navbar />
               {children}
             </main>
