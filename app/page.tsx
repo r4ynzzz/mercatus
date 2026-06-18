@@ -1,9 +1,12 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/navbar";
+import { Hero } from "@/components/hero";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Made It, Trust.</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+    </>
   );
 }
