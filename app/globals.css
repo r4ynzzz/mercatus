@@ -4,6 +4,27 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --animate-ticker: ticker 25s linear infinite;
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@utility ticker-wrap {
+  @apply overflow-hidden border-y border-[#e2e8e4] bg-white flex;
+}
+
+@utility ticker-track {
+  @apply flex w-max whitespace-nowrap animate-ticker;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -128,3 +149,4 @@
     @apply font-mono;
   }
 }
+
