@@ -8,7 +8,7 @@ export function Hero() {
           Market Data.
         </h3>
         <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-sans text-black">
-          Pure
+          Pure.
         </h3>
         <p className="text-black font-semibold text-sm lg:text-base">
           For the data nerds...

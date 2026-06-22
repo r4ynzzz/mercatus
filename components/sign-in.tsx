@@ -13,16 +13,18 @@ import { Label } from "@/components/ui/label";
 
 export function SignIn() {
   return (
-    <div className="h-screen bg-black flex justify-center">
+    <div className="h-screen bg-white flex justify-center bg-linear-to-b/oklab from-black from-5% via-10% to-30% to-white">
       <div className="flex items-center w-96">
-        <Card className="w-full max-w-sm">
+        <Card className="w-full max-w-sm bg-black text-white">
           <CardHeader>
             <CardTitle>Login to your account</CardTitle>
-            <CardDescription>
+            <CardDescription className="text-gray-400">
               Enter your email below to login to your account
             </CardDescription>
             <CardAction>
-              <Button variant="link">Sign Up</Button>
+              <Button variant="link" className="text-gray-400">
+                Sign Up
+              </Button>
             </CardAction>
           </CardHeader>
           <CardContent>
@@ -56,7 +58,7 @@ export function SignIn() {
             <Button type="submit" className="w-full">
               Login
             </Button>
-            <Button variant="outline" className="w-full">
+            <Button variant="outline" className="w-full text-black">
               Login with Google
             </Button>
           </CardFooter>
